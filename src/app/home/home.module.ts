@@ -21,7 +21,7 @@ import {TestComponentComponent} from '../test-component/test-component.component
       }
     ])
   ],
-  declarations: [HomePage, TestComponentComponent]
-  // declarations: [HomePage]
+  // declarations: [HomePage, TestComponentComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
