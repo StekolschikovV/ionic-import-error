@@ -5,15 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import {TestComponentComponent} from '../test-component/test-component.component'
+import {TestModule} from '../test/test.module'
+// import {TestComponentComponent} from '../test-component/test-component.component'
 
 @NgModule({
   imports: [
-    TestComponentComponent,
     CommonModule,
     FormsModule,
     IonicModule,
-    // declatations: [TestComponentComponent],
+    TestModule,
     RouterModule.forChild([
       {
         path: '',
@@ -21,7 +21,6 @@ import {TestComponentComponent} from '../test-component/test-component.component
       }
     ])
   ],
-  // declarations: [HomePage, TestComponentComponent]
   declarations: [HomePage]
 })
 export class HomePageModule {}

@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { Home2Page } from './home2.page';
+// import {TestComponentComponent} from '../test-component/test-component.component'
+import {TestModule} from '../test/test.module'
 
 const routes: Routes = [
   {
@@ -19,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    TestModule,
     RouterModule.forChild(routes)
   ],
   declarations: [Home2Page]
